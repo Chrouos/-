@@ -1,6 +1,8 @@
-#ifndef Data_H
-#define Data_H
-#include"Student.h"
+#ifndef Date_H
+#define Date_H
+
+#include<iostream>
+using namespace std;
 
 class Date
 {
@@ -16,17 +18,15 @@ public:
 	int getMonth() const;
 	int getDay() const;
 	int getYear() const;
+
 	void print();
 
 private:
-	
+
 	int month;
 	int day;
 	int year;
 
-
 };
 
-
-
-#endif // !Data_H
+#endif // !Rectangle
