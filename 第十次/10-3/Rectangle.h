@@ -14,7 +14,7 @@ public:
 	void setHeight(double newHeight);
 	double getHeight() const;
 
-	double getArea();
+	double getArea() const;
 	static int getNumOfRect();
 
 

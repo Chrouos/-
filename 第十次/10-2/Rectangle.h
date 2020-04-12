@@ -7,16 +7,19 @@ class Rectangle
 {
 public:
 
+	//建構子
 	Rectangle();
-	Rectangle(double newWidth, double newHeight);
+	Rectangle(double newWidth, double newHeight); 
 
-	double getWidth();
-	void setWidth(double newWidth);
+	//set為設定 , get為取得
+	double getWidth(); 
+	void setWidth(double newWidth); 
 
-	double getHeight();
-	void setHeight(double newHeight);
+	double getHeight(); 
+	void setHeight(double newHeight); 
 
-	double getArea();
+	//取得面積
+	double getArea(); 
 
 private:
 

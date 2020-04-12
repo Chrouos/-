@@ -10,7 +10,7 @@ Rectangle::Rectangle() {
 Rectangle::Rectangle(double newWidth, double newHeight) {
 	setWidth(newWidth);
 	setHeight(newHeight);
-	numOfRect++;
+	//numOfRect++;
 }
 
 void Rectangle::setWidth(double newWidth) {
@@ -27,7 +27,7 @@ double Rectangle::getHeight() const {
 	return height;
 }
 
-double Rectangle::getArea() {
+double Rectangle::getArea() const {
 	return width * height;
 }
 int Rectangle::getNumOfRect() {
