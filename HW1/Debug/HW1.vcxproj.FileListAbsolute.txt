@@ -1,0 +1,2 @@
+D:\C++\HW1\Debug\HW1.exe
+D:\C++\HW1\Debug\HW1.pdb
