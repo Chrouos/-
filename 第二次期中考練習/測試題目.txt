@@ -1,0 +1,42 @@
+
+錯誤: 執行錯誤、 vector 並沒有設定大小
+vector<int> v;  << 錯誤句子
+cout << v[0];
+
+正確: 
+vector<int> v(2);
+cout << v[0];
+
+---
+
+vector 取第一個值:
+
+vector<int> v(3);
+int a[3] = { 1,2,3 };
+for (int i = 0; i < 3; i++) {
+v[i] = a[i];
+cout << v[i] << " ";
+}
+cout << "\nv[1]: " << v[1] << endl << "v.at(1): " << v.at(1) << endl<< "v.at(0): " << v.at(0) << endl << "v[0]: " << v[0] << endl;//Ans: 假如要取地一個數字的話，無論at, [] 都得用0
+
+
+---
+
+vector	建構特定大小、具有特定值項目或具有特定 allocator 的向量，或將向量建構為其他一些向量的複本。
+Template  模板，指C++程式設計語言中的函式模板與類模板
+operator 運算子
+operator overloading 運算子多載
+pass by reference 改變呼叫的值
+pass by pointer 在呼叫的位置上做改變
+
+---
+
+vector:
+
+assign	清除向量，並將指定的項目複製到空向量。
+at	傳回向量中指定位置的項目參考。
+back	傳回向量的最後一個項目參考。
+max_size	傳回向量的最大長度。
+pop_back	刪除向量結尾的元素。
+push_back	將項目加入向量的結尾。
+
