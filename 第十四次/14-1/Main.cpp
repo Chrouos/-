@@ -13,18 +13,25 @@ int main() {
 	Rational first = f1 + f2 * f3;
 	Rational second = (s1 - s2) / s3;
 
-	cout << "first=" << first.toString() << endl;
-	cout << "second=" << second.toString() << endl;
+	cout << "first=" << first << endl;
+	cout << "second=" << second << endl;
+	/*
+	cout << "++first=" << ++first << endl;
+	cout << "--second=" << --second << endl;
+	//first.compareToVoid(second);
+	cout << first << (first < second ? "<" : (first == second) ? "=" : ">") << second << endl;
+	*/
 
-	first++;
-	cout << "++first=" << first.toString() << endl;
-	second--;
-	cout << "--second=" << second.toString() << endl;
+	first += second;
+	cout << "first+=second=" << first << endl;
+	cout << first[0] << endl;
 
-	first.compareToVoid(second);
+	
+
+
+
+
 
 	system("pause");
 	return 0;
-
-
 }

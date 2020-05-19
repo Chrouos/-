@@ -7,6 +7,7 @@ int main() {
     cout << "n 的值(n)：" << n << endl
          << "n 位址(&n)：" << &n << endl;
 
+    // *p 必須存取的是位置
     int *p = &n;    //假如 n 為 const 便會出現錯誤
     cout << endl << "*p = &n" << endl;
     cout << "p 的值(*p)：" << *p << endl
@@ -23,6 +24,7 @@ int main() {
 
     int arr[5] = { 10,20,30,40,50 };
     cout << "arr[5] = 10, 20, 30, 40, 50" << endl << "*pA = arr" << endl;
+
     int*pA = arr;
     for (int i = 0; i < 5; i++) {
         cout << "*(pA + " << i << "): " << *(pA + i) << endl;

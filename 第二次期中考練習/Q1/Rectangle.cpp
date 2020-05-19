@@ -1,4 +1,4 @@
-#include"Rectangle .h"
+#include"Rectangle.h"
 
 Rectangle::Rectangle(double width, double height) {
 
@@ -18,10 +18,20 @@ void Rectangle::setHeight(double newHeight) {
 	height = newHeight;
 }
 double Rectangle::getHeight() {
-	return hight;
+	return height;
 }
 
-double Rectangle::getArea();
+double Rectangle::getArea() {
+	return height * width;
+}
 
-void Rectangle::swapByReference(Rectangle& r2);
-void Rectangle::swapByPointer(Rectangle* r2);
+void Rectangle::swapByReference(Rectangle& r2) {
+	Rectangle temp = *this;
+	*this = r2;
+	r2 = temp;
+}
+void Rectangle::swapByPointer(Rectangle* r2) {
+	Rectangle temp = *this;
+	*this = *r2;
+	*r2 = temp;
+}

@@ -11,6 +11,7 @@ class Rational
 {
 public:
 
+	Rational();
 	Rational(int numerator, int denominator);
 
 	//取得分子、分母
@@ -19,6 +20,12 @@ public:
 
 	//計算 最大公因數 GCD
 	int gcd(int n, int d);
+
+	//加減乘除
+	Rational add(const Rational& secondRational) const;
+	Rational subtract(const Rational& secondRational) const;
+	Rational multiply(const Rational& secondRational) const;
+	Rational divide(const Rational& secondRational) const;
 
 	// 運算子 + - * /
 	Rational operator+(const Rational& r2) const;
@@ -36,12 +43,12 @@ public:
 	bool operator==(const Rational& r2)const;
 	bool operator!=(const Rational& r2) const;
 
-	// <<, >>
-	bool operator<<(const Rational& r2);
-	bool operator>>(const Rational& r2);
-
+	// cout, cin
+	friend ostream& operator<<(ostream &out, Rational& r);
+	friend istream& operator>>(istream& in, Rational& r);
+		
 	//[]
-	int operator[](int num);
+	int& operator[](int num);
 
 	// +=, -=, *=, /=
 	Rational operator+=(const Rational& r2);
@@ -49,15 +56,26 @@ public:
 	Rational operator*=(const Rational& r2);
 	Rational operator/=(const Rational& r2);
 
-	// ++ -- 
-	Rational operator++(int num);
-	Rational operator--(int num);
+	// 前++ -- 後++ --
+	Rational operator++(int dummy);
+	Rational operator--(int dummy);
 
 	Rational& operator++();
 	Rational& operator--();
 
+	//正負號
+	Rational operator+();
+	Rational operator-();
+
 	void compareToVoid(const Rational& r2);
 	string toString() const;
+
+	bool equals(const Rational& secondRational) const;
+	int intValue() const;
+	double doubleValue() const;
+
+	//COPY
+	Rational& operator=(const Rational& r2) ;
 
 private:
 
