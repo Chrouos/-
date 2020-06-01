@@ -23,3 +23,4 @@ double Ball::getVolume() {
 double Ball::getArea() {
 	return 4 * 3.14159 * pow(radius, 2);
 }
+
