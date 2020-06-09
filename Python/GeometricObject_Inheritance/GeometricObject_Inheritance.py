@@ -16,7 +16,8 @@ rect = Rectangle(rectangleWidth, rectangleHeight, rectangleColor, rectangleFille
 print("Circle:")
 print("Radius is {0}\nDiameter is {1}\nArea is {2}\nPerimeter is {3}".format(cir.getRadius(),\
    cir.getDiameter(), cir.getArea(), cir.getPerimeter()))
-print("color: %s and filled: %s"%(cir.getColor(), cir.isFilled()))
+#print("color: %s and filled: %s"%(cir.getColor(), cir.isFilled()))
+
 
 print("\nRectangle:")
 print("Width is {0}\nHeight is {1}\nArea is {2}\nPerimeter is {3}\ncolor: {4} and filled: {5}".format(\

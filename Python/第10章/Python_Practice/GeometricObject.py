@@ -2,21 +2,15 @@ class GeometricObject:
     def __init__(self, color, filled):
         self.__color = color
         self.__filled = filled
-    
+
     def getColor(self):
         return self.__color
     def setColor(self, color):
         self.__color = color
-
     def isFilled(self):
-        if(self.__filled == True):
-            return True
-        else:
-            return False
+        return self.__filled
     def setFilled(self, filled):
         self.__filled = filled
 
     def __str__(self):
-        return str("Color: &s and filled: &s"%(self.__color, self.__filled))
-
-
+        return str("color: {} and filled: {}".format(self.__color, self.__filled))

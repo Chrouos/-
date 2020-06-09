@@ -2,16 +2,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>9bbb6b01-3ff5-4c18-95e9-c0ac7b404b8e</ProjectGuid>
+    <ProjectGuid>6bddd067-a3da-4053-a0ca-b1d731828306</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>
-    </StartupFile>
+    <StartupFile>Python_Practice.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
-    <Name>StudentCard_Composition</Name>
-    <RootNamespace>StudentCard_Composition</RootNamespace>
+    <Name>Python_Practice</Name>
+    <RootNamespace>Python_Practice</RootNamespace>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -22,10 +21,22 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Circle.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Date.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GeometricObject.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Python_Practice.py" />
     <Compile Include="Rectangle.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Rectangle_Encapsulation.py" />
+    <Compile Include="Student.py">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
